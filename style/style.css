@@ -1,0 +1,280 @@
+
+#wrapper{ 
+ 	width: 100%;
+ 	height: 100%;
+ 	display: inline-block;
+}
+
+header{
+	position: relative;
+	bottom: 25px;
+	background-color: rgba(100,100,100,0.5);
+	height: 150px;
+
+}
+
+
+hgroup{
+	float: left;
+	color: red;
+	padding-left: 130px;
+	position: relative;
+	top: 10px;
+	right: 10px;
+}
+figure{
+	position: relative;
+	top: 25px;
+	left: 10px;
+}
+.content{
+	width: 100%;
+	padding-left: 10px;
+	background-color: red;
+}
+section{
+
+	float: left;
+	width:45%;
+	padding-left: 4%;
+	
+	
+}
+
+/*section::after{
+	content: '';
+	display: block;
+	border-bottom: 1px solid #999;
+	margin-right: 100px;
+}*/
+
+h3{
+	border-bottom: 1px solid #999;
+	width: 1000px;
+}
+h3::before{
+	content: ' ';
+	background-color: red;
+	height: 20px;
+	width: 20px;
+	border-radius: 50%;
+	display: inline-block;
+
+}
+
+.skill{
+	width: 100%;
+	background-color: rgba(100,100,100,0.5);
+	margin-top: 5px;
+	display: block;
+	height: 30px;
+	position: relative;
+}
+
+/*.skill span{
+	background-color:red;
+}*/
+
+[data-skill = "5" ] span{
+	
+	width: 80% ;
+	background-color: red;
+	display: block;
+	position: absolute;
+	top: 5px;
+	left:3px;
+}
+[data-skill = "3" ] span{
+	position: absolute;
+	top: 5px;
+	left: 3px;
+	width: 30% ;
+	background-color: red;
+	display: block;
+}
+[data-skill = "1" ] span{
+	width: 40%;
+	background-color: red;
+	display: block;
+	position: absolute;
+	top: 5px;
+	left: 3px;
+}
+
+[data-skill = "9" ] span{
+	position: absolute;
+	top: 5px;
+	left: 3px;
+	width: 13% ;
+	background-color: red;
+	display: block;
+}
+[data-skill = "2" ] span{
+	position: absolute;
+	top: 5px;
+	left: 3px;
+	width: 25% ;
+	background-color: red;
+	display: block;
+}
+
+[data-skill = "7" ] span{
+	position: absolute;
+	top: 5px;
+	left: 3px;
+	width: 70% ;
+	background-color: red;
+	display: block;
+}
+.skills-primary::before{
+	content: 'Main';
+	display: block;
+	margin: 10px 0px;
+}
+
+.skills-secondary::before{
+	content: 'Other';
+	display: block;
+	margin: 10px 0px;
+}
+
+h4{
+	color: red;
+
+}
+.experience-institution::before{
+	content: ' @ ';
+	display: inline;
+	
+}
+.experience-institution{
+	font-size: 13px;
+	color: rgba(255,0,0,0.9);
+}
+
+.experience-details::before{
+	content: 'In ';
+	display: inline;
+	margin-left:10px; 
+}
+
+.experience-details{
+	color: rgba(100,100,100,0.6);
+	position: relative;
+	bottom: 20px;
+}
+.experience-date-separator{
+	color: red;
+}
+
+	
+#contact{
+	position: absolute;
+	top: 25px;
+	left:400px;
+
+	
+	
+	display: inline-block;
+
+ }
+
+dl{
+	position: relative;
+	bottom: 15px;
+	margin-bottom: -16px;
+	left: 300px;
+}
+
+dt{
+	background-color: blue;
+	position: absolute;
+	background-color: red;
+	float: left;
+	height: 20px;
+	width: 120px;
+	color: white;
+	font-size:13px;
+}
+dd{
+	color: red;
+	font-size:13px;
+	height: 20px;
+	padding-left: 82px;
+	width: 600px;
+	background-color: black;
+	
+}
+
+dd a{
+	color: red;
+}
+
+#contact h3{
+	display: none;
+	
+}
+
+
+@media only screen and (max-width: 800px) {
+
+	section{
+    	width: 46%;
+    	padding-bottom: 10px;
+    	float: left;
+    }
+    #experiences{
+    	width: 100%;
+    }
+    figure{
+    	position: absolute;
+    	top: 1900px;
+    }
+
+    #contact{
+    	position: static;
+    	top: auto;
+    	left: auto;
+    	padding: auto;
+    	width: 100%;
+    	display: inline-block;
+    }
+    dl{
+    	position: static;
+    	top: auto;
+    	left: auto;
+    	padding: auto;
+    }
+    dt{
+    	position: static;
+    	top: auto;
+    	left: auto;
+    	padding: auto;
+    }
+
+   
+
+
+}
+
+
+@media only screen and (max-width: 500px) {
+   figure {
+       position: absolute;
+      top: 2100px;
+      
+    }
+    section{
+    	width: 100%;
+
+    }
+    #contact{
+    	position: relative;
+    	display: inline-block;
+    	
+    }
+    h3{
+	border-bottom: 1px solid #999;
+	width: 450px;
+}
+}
